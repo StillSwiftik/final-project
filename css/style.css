@@ -356,3 +356,31 @@ nav {
     color: #001E41;
 
 }
+.burger__menu {
+    position: absolute;
+    background: #E2E2E2;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+}
+.burger__menu.active {
+    width: 250px;
+    opacity: 1;
+}
+.show__modal_menu {
+    position: fixed;
+    top: 40%;
+    right: 40%;
+    width: 250px;
+    height: 250px;
+    background: #E2E2E2;
+    z-index: 1;
+    display: none;
+}
+
+
+.show__modal_menu.active {
+    display: block;
+}
