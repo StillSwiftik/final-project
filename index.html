@@ -20,8 +20,9 @@
                 </ul>
                 <div class="nav__buttons">
                     <button class="nav__btn_1 btn">Sign Up</button>
-                    <button class="nav__btn_2">Contact sales</button>
+                    <button class="nav__btn_2 btn">Contact sales</button>
                 </div>
+                <button class="burger__menu_btn "><i class="fa-solid fa-bars"></i></button>
             </nav>
         </header>
         <main class="main">
@@ -31,7 +32,7 @@
                         <h1 class="first__bg_title">How to do a Website Audit to Improve SEO & Conversions</h1>
                         <p class="first__bg_text_1">Usability auditing with the Plerdy tool is a comprehensive expert assessment of your website based on a profound study of user behavior registered on it. Plerdy will provide you with crucial data based on which you will be able to run an efficient usability audit of your website, identify and fix SEO issues, and subsequently lead it to higher positions in search.</p>
                         <p class="first__bg_text_2">Thus, you'll compile a list of flaws in your website interface, navigation, and conversion path that can eventually affect its micro and macro conversion rates.</p>
-                        <button class="first__bg_btn">Run the Plerdy tool</button>
+                        <button class="first__bg_btn btn">Run the Plerdy tool</button>
                         <p class="first__bg_footer_text">Trusted by some of the world's largest enterprises</p>
                         <div class="first__bg_images">
                             <img src="img/Mask group.png" alt="">
@@ -125,9 +126,61 @@
             </div>
         </main>
         <footer class="footer">
-            <button class="footer__btn">Boost my website conversion</button>
+            <button class="footer__btn btn">Boost my website conversion</button>
             <p class="footer__text">So, it’s high time for you to stop losing 99% of potential clients due to being unaware of your website users’ behavior patterns and needs.</p>
         </footer>
+
+        <div class="burger__menu ">
+            <img src="img/logo/logo.png" alt="" class="logo__img">
+            <ul class="nav__list">
+                <li class="list__item"><a href="#" class="link__item">Pricing</a></li>
+                <li class="list__item"><a href="#" class="link__item">Use Cases</a></li>
+                <li class="list__item"><a href="#" class="link__item">Book a Demo</a></li>
+            </ul>
+            <div class="nav__buttons">
+                <button class="nav__btn_1 btn">Sign Up</button>
+                <button class="nav__btn_2 btn">Contact sales</button>
+            </div>
+        </div>
+        <div class="show__modal_menu active">
+            <div class="show__modal_menu_items">
+                <div class="first__bg_show_modal">
+
+                </div>
+                <div class="second__bg_show_modal">
+                    <h2>How to do a Website Audit to Improve SEO & Conversions</h2>
+                    <p>You will get an SMS with a link to the webinar</p>
+                    <form action="" class="show__modal_menu_form" id="form">
+                        <div class="form__box">
+                            <label for="">Name</label>
+                            <div class="block__name">
+                                <input type="text" id="name" name="name" placeholder="Boris Johnson">
+                            </div>
+                        </div>
+                        <div class="form__box">
+                            <label for="">Lable</label>
+                            <div class="block__tel">
+                                <select class="tel__selection">
+                                    <option value="value1">🇺🇦 +380</option>
+                                    <option value="value2">🇵🇱 +48</option>
+                                    <option value="value3">🇨🇿 +420</option>
+                                </select>
+                                <input type="tel" id="number" name="number" placeholder="XX XXX XXXX">
+                            </div>
+                        </div>
+                        <div class="btn__block">
+                            <button class="support non-active">Support</button>
+                            <button class="Contact__sales non-active" type="submit">Contact sales</button>
+                        </div>
+                    </form>
+                    <div class="accept__policy">
+                        <input type="checkbox" class="accept__policy_tick">
+                        <p>By sending up? you agree to our Conditions and Privacy Policy</p>
+                    </div>
+                </div>
+                <div class="show__modal_menu_leave_btn">&times;</div>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -139,27 +192,40 @@
             },
             slidesPerView: 4,
             spaceBetween: 20,
-            // breakpoints: {
-            //     1024: {
-            //         slidesPerView: 4,
-            //         spaceBetween: 20
-            //     },
-            //     768: {
-            //         slidesPerView: 3,
-            //         spaceBetween: 18
-            //     },
-            //     480: {
-            //         slidesPerView: 2,
-            //         spaceBetween: 15
-            //     },
-            //     320: {
-            //         slidesPerView: 1,
-            //         spaceBetween: 15
-            //     }
-            // }
+            breakpoints: {
+                1400: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                1364: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 15
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView:3,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 25
+                },
+                480: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 35
+                }
+            }
         });
 
     </script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
